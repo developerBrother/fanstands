@@ -1,0 +1,9 @@
+[
+    {"name":"Luke Combs","desc":"Nissan Stadium - Nashville TN","type":"music","date":"March 1st, 7:00 PM"},
+    {"name":"Thomas Rhett","desc":"MVP Arena - Albany NY","type":"music","date":"June 8, 7:30 PM"},
+    {"name":"Ricky Gervais","desc":"Radio City Music Hall - New York NY","type":"comedy","date":"June 30, 7:30 PM"},
+    {"name":"Impractical Jokers","desc":"Schottenstein Center - Columbus OH","type":"comedy","date":"June 2, 7:30 PM"},
+    {"name":"NBA Finals Game 1","desc":"Watch the Denver Nuggets face Miami Heat in Ball Arena, Denver CO","type":"sports","date":"June 1, 6:30 PM"},
+    {"name":"NFL Chiefs vs Lions","desc":"Arrowhead Stadium - Kansas City MO","type":"sports","date":"September 7, 7:20 PM"}
+
+]

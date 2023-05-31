@@ -1,0 +1,43 @@
+/* img{
+    
+    height:20em;
+} */
+
+.card img {
+    max-height:100px;
+    max-width:100px;
+   align-self:center;
+}
+
+.cardStyle{
+    height:100%;
+}
+
+.search-form{
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    
+    
+}
+
+.search-form input{
+    position:relative;
+    height:3em;
+    width:100%;
+    border:none;
+
+}
+
+.search-form button{
+    position:absolute;
+    background-color:rgb(64, 0, 255);
+    height:3em;
+    width:100px;
+    right:0px;
+    border:none;
+    
+   
+    
+}
