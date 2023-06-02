@@ -41,3 +41,26 @@
    
     
 }
+
+.fanSize{
+    width:25%;
+}
+
+@media screen and (max-width:576px) {
+    .fanSize{
+        width:50%;
+    }
+}
+
+.customNavbar{
+justify-content:center;
+align-items:center;
+}
+
+/* @media screen and (max-width:576px){
+    .customNavbar{
+        justify-content:center;
+        color:red;
+        background-color:red;
+    }
+} */
