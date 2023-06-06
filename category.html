@@ -101,6 +101,7 @@
     <div class="container">
       <div class="d-sm-flex justify-content-around align-items-center">
         <div class="container ">
+          <h2 id="categoryTitle"></h2>
           <div id="categoryResults" class="p-3 row justify-content-center"></div>
         </div>
       </div>
@@ -127,6 +128,33 @@
        
        
         var categoryVal=localStorage.getItem("categoryVal");
+        $("#categoryTitle").html(categoryVal);
+
+
+        function appendToList(id,name, date, desc) {
+          //append the results
+          $("#categoryResults").append(
+            "<div class=\"card bg-light text-dark rounded m-2 p-2 col-sm-5\"> <a href=\"/\" id=\""+id+"\"> <div card=\"card-body\">" +
+              '<h3 class="text-primary fw-bold">' +
+              name +
+              "</h3>" +
+              "<hr/>" +
+              date +
+              "<br/>" +
+              desc +
+              "<br/>" +
+              "</div></a></div>"
+          );
+          
+          //set local Storage to id of event clicked and go to event page
+          $("#categoryResults [href]").click(function (e) {
+          e.preventDefault();          
+          var eventID=e.currentTarget.getAttribute("id");
+          localStorage.setItem("eventID",eventID);
+          window.location.replace("/event.html");        
+        });
+        }
+
 
        //category search
        var expression = new RegExp(categoryVal, "i");
@@ -138,18 +166,8 @@
                
               ) {
                 //append the results
-                $("#categoryResults").append(
-                  '<div class="card bg-light text-dark rounded m-2 p-2 col-sm-5"> <div card=\"card-body\"">' +
-                    
-                    "<h3 class=\"text-primary fw-bold\">"+value.name+"</h3>"+
-                    "<hr/>" +
-                    value.date+
-                    "<br/>"+
-                    value.desc +
-                    "<br/>"+
-
-                    "</div></div>"
-                );
+                console.log("printing id:"+value.id);
+                appendToList(value.id,value.name,value.date,value.desc);
               }
             });
           });
