@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
-  <body>
+  <body class=" d-flex flex-column min-vh-100 bg-dark">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container">
@@ -58,24 +58,7 @@
               >
             </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-primary fw-bold"
-                href=""
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
-              >
-                More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Other Events</a>
-                <a class="dropdown-item" href="#">Deals</a>
-              </div>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -85,7 +68,7 @@
     <!--Event-->
     <section class="bg-dark text-light p-5 text-center">
       <div class="container">
-       
+      <hr> 
         <div class="row align-items-center ">
           <div class="col-sm-6">
             <h1 id="eventTitle" class="text-primary"></h1>
@@ -96,7 +79,7 @@
             <button class="btn btn-secondary btn-lg ">Tickets Sold out</button>
           </div>
         </div>
-        
+        <hr> 
       </div>
     </section>
     <!--Event-->
@@ -104,7 +87,7 @@
     
 
     <!--Footer Section-->
-    <footer class="p-5 bg-dark text-white text-center">
+    <footer class="p-5 bg-dark text-white text-center mt-auto">
       <div class="container">
         <p class="lead">Copyright &copy: 2023 FanStands</p>
       </div>
